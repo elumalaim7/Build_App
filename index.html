@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elu — UX Designer &amp; AI Product Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">Elu<span>.</span></a>
+      <button id="menuToggle" class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navLinks" class="nav__links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__tag">hello, i am</p>
+          <h1>Elu</h1>
+          <p class="hero__typing">I am a <span id="typed"></span><span class="cursor">|</span></p>
+          <p class="hero__desc">
+            UX designer who builds real apps — turning AI into products
+            that are genuinely useful for everyone.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View my work</a>
+            <a href="#contact" class="btn btn--ghost">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About me</h2>
+        <p class="section__lead">
+          I'm Elu, a UX designer who also builds apps from start to finish.
+          My goal is simple: build real AI products that give everyone
+          a real benefit.
+        </p>
+        <div class="about__cards">
+          <div class="card">
+            <h3>� UX Design</h3>
+            <p>Designing interfaces that anyone can use — no technical background needed. Good AI starts with good experience.</p>
+          </div>
+          <div class="card">
+            <h3>� Build Real Apps</h3>
+            <p>Shipping complete applications, not demos — from idea and design to a working product people can use today.</p>
+          </div>
+          <div class="card">
+            <h3>🌍 AI for everyone</h3>
+            <p>Using AI to solve everyday problems so the benefit reaches everyone, not just developers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__lead">The tools I use to go from idea to a shipped product.</p>
+        <div class="skills" id="skillsList"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__lead">A few things I'm building — real products, real benefit.</p>
+        <div class="projects" id="projectsList"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Get in touch</h2>
+        <p class="section__lead">Have an idea or want to collaborate? Let's talk.</p>
+        <form id="contactForm" class="contact" novalidate>
+          <div class="contact__field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="contact__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="contact__field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+          </div>
+          <p id="formStatus" class="contact__status" role="status"></p>
+          <button type="submit" class="btn btn--primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Elu. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
